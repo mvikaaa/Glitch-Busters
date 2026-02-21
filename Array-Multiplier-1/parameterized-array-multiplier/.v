@@ -1,0 +1,1 @@
+Synthesizable RTL code.
