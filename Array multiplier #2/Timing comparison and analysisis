@@ -1,7 +1,7 @@
 Non-pipeline	W adders
 Pipeline    	1 adder
 
-Metric	    Non-Pipeline	      Pipeline
-Latency	           1 cycle	    W cycles
-Throughput	       Low	        Very high
-Clock frequency	   Low	        High
+Metric	           Non-Pipeline	      Pipeline
+Latency	           1 cycle	          W cycles
+Throughput	       Low	              Very high
+Clock frequency	   Low	              High
