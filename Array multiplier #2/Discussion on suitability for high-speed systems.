@@ -1,0 +1,9 @@
+The pipelined array multiplier is highly suitable for high-performance systems because:
+Advantages
+1. High clock frequency:Short combinational path enables fast operation.
+
+2. Regular structure:Easy placement and routing in FPGA/ASIC.
+
+3. Predictable timing:Each stage identical → easy timing closure.
+
+4. High throughput
