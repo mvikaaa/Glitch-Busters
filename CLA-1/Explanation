@@ -1,1 +1,8 @@
-/* Explanation of the working
+/* Explanation of the working:
+Unlike a regular CLA waiting for the carry, the code provided predicts it instead by splitting a a full adder where only the xor logic remians intact. We are replacing a slow serial process with a fast parallel process.
+The code works by calculating all carry bits at once instead of waiting for them to move from one bit to the next.
+First, it checks every bit position to see if it will generate a carry (both inputs are 1) or propagate a carry (at least one input is 1). Since these checks only depend on the two numbers being added, every bit does this calculation at the exact same time.
+
+Second, a central logic block looks at all these generate and propagate signals simultaneously. It uses a "flattened" equation to determine if a carry will exist for any given position. For example, it knows the fourth bit will have a carry if the third bit created one, or if an earlier bit created one and all bits in between passed it along. This removes the need for bit three to wait for bit two to finish.
+
+Finally, the adder calculates the sum by combining these carries with the initial inputs. Because all the carry information is ready at once, the final result for every bit is produced at the same time. This turns a slow, step-by-step process into a single, quick event that takes the same amount of time regardless of the bit-width.
