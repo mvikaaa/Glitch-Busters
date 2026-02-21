@@ -1,0 +1,13 @@
+As WIDTH increases:
+1. Adder chain delay
+
+2. Routing congestion
+
+3. Input loading
+
+4. Power density
+
+hardware optimization:
+1.No full adders matrix
+2.No intermediate registers
+3.Resource effiiciency
