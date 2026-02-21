@@ -1,0 +1,1 @@
+testing parameterized array multiplier
