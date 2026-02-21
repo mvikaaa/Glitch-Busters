@@ -1,1 +1,0 @@
-RTL pedestrian crossing mode.

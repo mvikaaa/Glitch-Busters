@@ -1,1 +1,0 @@
-testing pedestrian crossing mode.
